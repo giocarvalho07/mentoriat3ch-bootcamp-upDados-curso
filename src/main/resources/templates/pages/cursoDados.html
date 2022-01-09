@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title> mentoriaT3ch </title>
+
+  <link rel="shortcut icon" href="img/logoRoxo.png">
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+
+  <link th:href="@{/css/styles.css}" href="css/styles.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Open+Sans:wght@600&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg" style="background-color:#14100D">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://img.icons8.com/ios-filled/50/fa314a/source-code.png"/>
+      </div>
+      <div class="col">
+        <h1 class="text-danger"> mentoria_tech </h1>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Page Content-->
+<div class="row" style="background-color:#14100D">
+  <!-- Heading Row-->
+  <div class="row gx-4 gx-lg-5 align-items-center my-5" >
+    <div class="col-lg-6 center">
+      <img class="img-fluid rounded mb-4 mb-lg-0" width="275" src="img/sobre.jpg" style="margin-left: 80px">
+    </div>
+    <div class="col-lg-4 center" style="margin: 15px">
+      <h2 class="font-weight-black text-danger"> Obrigado(a) </h2>
+      <h3 class="font-weight-light text-light"> Neste
+        <span class="text-danger" style="font-family: 'Courgette', cursive";> curso gratuito  </span>
+      </h3>
+      <h3 class="font-weight-black text-light" > Você vai aprender programação
+        <span class="text-danger" style="font-family: 'Courgette', cursive";>
+       #naPrática 💻
+      </span>
+      </h3>
+      <br>
+      <tr th:each="cursos: ${cursoWeb}"></tr>
+      <a th:href="@{#form}" class="btn text-white" style="background-color: #dc3545!important;">
+        Começar o curso agora!
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Call to Action-->
+<div class="row" >
+  <div class="container my-5 py-4 text-center" >
+    <div class="container">
+      <div class="container">
+        <div class="card-body">
+          <h2 class="card-header bg-black text-light">
+            <span id="form" class="text-danger" style="font-family: 'Courgette', cursive";> Bootcamp  </span>
+            up dados
+          </h2>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header bg-danger text-light" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  Aula 1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/sx0eWalNvBk" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 1
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 2
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/TLNJO4IsHtE" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 2
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 3
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/-dOlK9UctS4" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 3
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 4
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/5KLb0hJ6Lyc" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 4
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 5
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/MdBJRweSaCs" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 5
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 6
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/1XEbzd5GXSg" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 6
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 7
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/Vv74mvr2tDY" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 7
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 8
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/yw71a3rFoP8" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 8
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 9
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/klLwWv_lBI0" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 9
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-danger text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Aula 10
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a href="https://youtu.be/VzmmQOCkqcE" target="_blank" class="btn text-white" style="background-color: #dc3545!important;">
+                    Aula 10
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- Call to Action-->
+<div class="container my-5 py-4 text-center">
+  <div class="container">
+    <h1 class="font-weight-black" style="color:#14100D";> Bônus </h1>
+    <h3 class="font-weight-light text-black"> Vou disponibilizar
+      <span class="text-danger" style="font-family: 'Courgette', cursive";> 03 e-books  </span>
+    </h3>
+    <h3 class="font-weight-black text-black" > gratuitos
+      <span class="text-danger" style="font-family: 'Courgette', cursive";>
+       #naPrática 💻
+      </span>
+    </h3>
+    <br>
+  </div>
+</div>
+
+
+
+<div class="container my-5 py-4 text-center">
+  <div class="row gx-4 gx-lg-5">
+
+    <div class="col-md-4 mb-5" >
+      <div class="card h-100" style="background-color:#14100D";>
+        <div class="card-footer">
+          <h3 class="card-title text-danger"> Java 8 </h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-light">
+            Aprenda Java 8, lógica de programação e programação orientada a objetos.
+          </p>
+          <a href="img/ebookJava.pdf" download class="btn text-white" style="background-color: #dc3545!important;">
+            Baixe o e-book agora!
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-5">
+      <div class="card h-100" style="background-color:#14100D";>
+        <div class="card-footer">
+          <h3 class="card-title text-danger"> Arquitetura Web </h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-light">
+            Aprenda sobre a principal arquitetura de software.
+          </p>
+          <a href="img/ebookWeb.pdf" download class="btn text-white" style="background-color: #dc3545!important;">
+            Baixe o e-book agora!
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-5">
+      <div class="card h-100" style="background-color:#14100D";>
+        <div class="card-footer">
+          <h3 class="card-title text-danger"> Carreira Tech </h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-light">
+            Aprenda os princípios para iniciar na área da tecnologia.
+          </p>
+          <a href="img/ebookSpring.pdf" download type="button" class="btn btn-danger bg-danger text-white">
+            Baixe o e-book agora!
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+  <div class="container px-4 px-lg-5">
+    <p class="m-0 text-center text-white">Copyright &copy; mentoria_tech </p>
+  </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
