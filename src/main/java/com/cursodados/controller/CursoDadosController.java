@@ -30,7 +30,7 @@ public class CursoDadosController {
     public ModelAndView receberCurso() {
         ModelAndView model = new ModelAndView("pages/cursoDados");
         Iterable<CursoDados> cursoDados = cursoDadosService.exibirPageCurso();
-        model.addObject("cursoWeb", cursoDados);
+        model.addObject("cursoDados", cursoDados);
         return model;
     }
 
